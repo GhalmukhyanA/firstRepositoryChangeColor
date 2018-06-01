@@ -28,14 +28,20 @@
             padding: 20px;
             font-weight: bold;
         }
+		#start{
+			background: lightgreen;
+		}
+		#stop{
+			background: #cecece;
+		}
     </style>
 </head>
 <body>
 <div id="container">
     <div id="round"><h3 id="p">Colors</h3></div>
 
-    <button onclick="startChangeColor()">Start</button>
-    <button onclick="stopChangeColor()">Stop</button>
+    <button id="start" onclick="startChangeColor()">Start</button>
+    <button id="stop"  onclick="stopChangeColor()" disabled="disabled">Stop</button>
 
     <script src="script.js" type="text/javascript"></script>
 </div>
